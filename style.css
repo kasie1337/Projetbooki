@@ -15,7 +15,9 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 300px;
-    grid-gap: 25px;
+    width: 1400px;
+    margin: auto;
+    grid-gap: 20px;
     grid-template-areas: "header header"
 "accomodation popularity"
 "activitie activitie"
@@ -25,9 +27,11 @@
 .police h1 {
     font-size: 1rem;
 }
-.police_nt{
-    font-family: Ralewaynt,sans-serif;
+
+.police_nt {
+    font-family: Ralewaynt, sans-serif;
 }
+
 .header_grid {
     grid-area: header;
     font-family: 'Raleway', sans-serif;
@@ -41,6 +45,7 @@
 .logo_index {
     display: flex;
     flex-grow: 5;
+    margin-left: 30px;
 
 }
 
@@ -70,7 +75,8 @@
 
 .margin_form {
     margin-top: 25px;
-    margin-left: 10px;
+    margin-left: 30px;
+
 }
 
 .margin_form > p {
@@ -166,7 +172,7 @@
 .filtre i {
     padding: 0.5em;
     border-radius: 20px;
-    margin-right: 5px;
+
     background-color: #4f7017;
 }
 
@@ -189,14 +195,44 @@
     grid-template-rows: 20px 180px 180px 50px;
     padding: 20px;
     grid-gap: 30px;
-    margin: 5px;
     background-color: #d5d5d5;
     border-radius: 20px;
     justify-content: center;
+    grid-template-areas: "header header header"
+                         "item_a item_b item_c"
+                         "item_d item_e item_f";
+    margin-left: 30px;
 }
-.margin_title{
+
+.position_a {
+    grid-area: item_a;
+}
+
+.position_b {
+    grid-area: item_b;
+}
+
+.position_c {
+    grid-area: item_c;
+}
+
+.position_d {
+    grid-area: item_d;
+}
+
+.position_e {
+    grid-area: item_e;
+}
+
+.position_f {
+    grid-area: item_f;
+}
+
+.margin_title {
     font-size: 0.8rem;
+    grid-column-start: 1;
 }
+
 .picture_a {
     width: 300px;
     height: 115px;
@@ -223,12 +259,12 @@
                          "articleb"
                          "articlec";
     grid-gap: 30px;
-    margin: 5px;
+
     background-color: #d5d5d5;
     border-radius: 20px;
-
+    width: 410px;
     padding: 20px;
-
+    margin-left: 10px;
 }
 
 .display_a {
@@ -239,7 +275,7 @@
 .graph {
     grid-area: header;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 
 .graph i {
@@ -411,6 +447,8 @@
 "item_a item_e item_c item_f";
     grid-area: activitie;
     grid-gap: 25px;
+    width: 1331px;
+    margin-left: 30px;
 }
 
 .item_a {
@@ -457,17 +495,21 @@
     padding: 25px;
     grid-area: footer;
     background-color: #d5d5d5;
+    margin-top: 30px;
 
 }
-.footer_page{
+
+.footer_page {
     width: 255px;
 }
+
 .footer_page li {
     margin-right: 10%;
-    font-family: Ralewaynt ,sans-serif;
+    font-family: Ralewaynt, sans-serif;
 }
-.footer_place{
+
+.footer_place {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 1120px;
 }
