@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+}
+
+@font-face {
+    font-family: 'Ralewaynt', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+}
+
+
+.police {
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 300px;
+    grid-gap: 25px;
+    grid-template-areas: "header header"
+"accomodation popularity"
+"activitie activitie"
+"footer footer";
+}
+
+.police h1 {
+    font-size: 1rem;
+}
+.police_nt{
+    font-family: Ralewaynt,sans-serif;
+}
+.header_grid {
+    grid-area: header;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    height: 50px;
+}
+
+.logo_index {
+    display: flex;
+    flex-grow: 5;
+
+}
+
+.logo_agence {
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    object-fit: cover;
+}
+
+.activitie {
+    display: flex;
+    flex-grow: 2;
+    justify-content: start;
+    align-items: center;
+    font-size: 70%;
+    margin-left: 50px;
+}
+
+.accomodation {
+    display: flex;
+    flex-grow: 14;
+    justify-content: end;
+    align-items: center;
+    font-size: 70%;
+}
+
+.margin_form {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.margin_form > p {
+    font-size: 0.6rem;
+}
+
+.barre_search {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.border_case {
+    color: black;
+    border: solid white;
+    border-radius: 20px;
+    width: 300px;
+    height: 135px;
+}
+
+.border_style {
+    border-style: solid;
+    border-right: unset;
+    border-color: #f5ced2;
+}
+
+.button_search {
+    background-color: blueviolet;
+    color: white;
+    width: 130px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.style_button {
+    border-radius: 20px;
+    padding-right: 1em;
+    margin-right: 20px;
+    border: solid 1px #0034d159;
+    background-color: white;
+
+}
+
+.style_button:hover {
+    box-shadow: 0 0 0 0 rgba(8, 14, 44, 1);
+    animation: pulse 1.3s alternate forwards;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 10px rgba(8, 14, 44, 0.01);
+    }
+}
+
+.style_button i {
+    padding: 10px;
+    background-color: #0034d159;
+    border-radius: 21px;
+    margin-right: 10px;
+    color: #0065FC;
+}
+
+#child {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.margin_filtre {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#logo_info {
+    margin-right: 10px;
+    color: #0065FC;
+    border: #00000045 solid 1px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+
+.title_form p {
+    font-size: 0.70em;
+}
+
+.filtre i {
+    padding: 0.5em;
+    border-radius: 20px;
+    margin-right: 5px;
+    background-color: #4f7017;
+}
+
+.information {
+    font-size: 0.70em;
+}
+
+.information i {
+    color: #3a709a;
+    border: 1px solid #0000003d;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 0.5em;
+}
+
+#accomodations {
+    display: grid;
+    grid-area: accomodation;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 20px 180px 180px 50px;
+    padding: 20px;
+    grid-gap: 30px;
+    margin: 5px;
+    background-color: #d5d5d5;
+    border-radius: 20px;
+    justify-content: center;
+}
+.margin_title{
+    font-size: 0.8rem;
+}
+.picture_a {
+    width: 300px;
+    height: 115px;
+    border: solid white;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.size_img {
+    width: 245px;
+}
+
+.position_a {
+    grid-column-start: 1;
+}
+
+.section_ranked {
+    grid-area: popularity;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 135px 135px 135px;
+    grid-template-areas: "header"
+                         "articlea"
+                         "articleb"
+                         "articlec";
+    grid-gap: 30px;
+    margin: 5px;
+    background-color: #d5d5d5;
+    border-radius: 20px;
+
+    padding: 20px;
+
+}
+
+.display_a {
+    display: grid;
+    justify-content: center;
+}
+
+.graph {
+    grid-area: header;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.graph i {
+    margin-left: 40%;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.range_picture {
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.fig_ranked {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fig_size {
+    height: 65px;
+    padding-left: 10px;
+    border-top: 1px solid white;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    width: 245px;
+    font-size: 0.6rem;
+    color: black;
+}
+
+.padding_top {
+    font-size: 0.6rem;
+    position: relative;
+    border: white;
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+    padding: 10px;
+}
+
+.position_ranked {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: 130px;
+}
+
+.title_bottom {
+    display: block;
+    font-size: 0.6rem;
+}
+
+.padding_word {
+    font-size: 0.9rem;
+}
+
+.color_price {
+    font-size: 0.8rem;
+    font-family: Ralewaynt, sans-serif;
+}
+
+.star {
+    color: #0065FC;
+    font-size: 0.6rem;
+}
+
+.star_ranked {
+    position: absolute;
+    top: 65px;
+    font-size: 0.6rem;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    color: #0065FC;
+}
+
+.line_height {
+    line-height: 1;
+    width: 130px;
+    margin-bottom: 5px;
+}
+
+.star_grey {
+    color: #d5d5d5;
+}
+
+.loc_back {
+    display: flex;
+    background-color: #f5ced2;
+    align-items: center; /*--localisation icone--*/
+    padding: 0.9em;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.filtre h3 {
+    font-size: 0.90em;
+}
+
+.picture_hotel_ranked {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.picture_hotel_ranked h2 {
+    font-size: 0.70em;
+}
+
+.picture_hotel_ranked p {
+    font-size: 0.70em;
+}
+
+
+.pad_bot {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.activitie_police {
+    font-size: 0.90em;
+    padding: 5px 0 5px 10px;
+    color: black;
+}
+
+.picture_absolute {
+    margin-top: 25px;
+}
+
+.title_activitie {
+    display: flex;
+    align-items: end;
+}
+
+.screen {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.screen_longchamp {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.screen_dame {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    object-position: top;
+}
+
+.screen_top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.screen_boat {
+    height: 375px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.margin_aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px;
+    grid-template-areas: "header header header header"
+"item_a item_b item_c item_d"
+"item_a item_e item_c item_f";
+    grid-area: activitie;
+    grid-gap: 25px;
+}
+
+.item_a {
+    grid-area: item_a;
+    border-radius: 20px;
+}
+
+.item_b {
+    grid-area: item_b;
+}
+
+.item_c {
+    grid-area: item_c;
+}
+
+.item_d {
+    grid-area: item_d;
+}
+
+.item_f {
+    grid-area: item_f;
+}
+
+.item_e {
+    grid-area: item_e;
+    display: grid;
+    align-items: end;
+}
+
+.margin_aside > header {
+    grid-area: header;
+}
+
+.fig_activitie {
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 5px 5px #00000040;
+}
+
+.bottom_page {
+    display: flex;
+    padding: 25px;
+    grid-area: footer;
+    background-color: #d5d5d5;
+
+}
+.footer_page{
+    width: 255px;
+}
+.footer_page li {
+    margin-right: 10%;
+    font-family: Ralewaynt ,sans-serif;
+}
+.footer_place{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
