@@ -12,16 +12,17 @@
 .police {
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 300px;
-    width: 1400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 0.9fr 0.5fr;
+    position: relative;
+    width: 1300px;
     margin: auto;
     grid-gap: 20px;
     grid-template-areas: "header header"
 "accomodation popularity"
 "activitie activitie"
 "footer footer";
+
 }
 
 .police h1 {
@@ -46,7 +47,6 @@
     display: flex;
     flex-grow: 5;
     margin-left: 30px;
-
 }
 
 .logo_agence {
@@ -58,25 +58,26 @@
 
 .activitie {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
     justify-content: start;
     align-items: center;
     font-size: 70%;
     margin-left: 50px;
+    grid-area: nav;
 }
 
 .accomodation {
     display: flex;
-    flex-grow: 14;
+    flex-grow: 10;
     justify-content: end;
     align-items: center;
     font-size: 70%;
+    grid-area: nav;
 }
 
 .margin_form {
     margin-top: 25px;
     margin-left: 30px;
-
 }
 
 .margin_form > p {
@@ -262,7 +263,7 @@
 
     background-color: #d5d5d5;
     border-radius: 20px;
-    width: 410px;
+    width: 350px;
     padding: 20px;
     margin-left: 10px;
 }
@@ -414,13 +415,14 @@
 }
 
 .screen_longchamp {
-    height: 150px;
+    height: 160px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    object-position: top;
 }
 
 .screen_dame {
-    height: 150px;
+    height: 140px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     object-position: top;
@@ -447,8 +449,9 @@
 "item_a item_e item_c item_f";
     grid-area: activitie;
     grid-gap: 25px;
-    width: 1331px;
+    width: 1230px;
     margin-left: 30px;
+    position: relative;
 }
 
 .item_a {
@@ -470,6 +473,9 @@
 
 .item_f {
     grid-area: item_f;
+    position: absolute;
+    width: 288px;
+    bottom: 0;
 }
 
 .item_e {
@@ -496,7 +502,9 @@
     grid-area: footer;
     background-color: #d5d5d5;
     margin-top: 30px;
-
+    width: 1300px;
+   position: absolute;
+    bottom: 55px;
 }
 
 .footer_page {
