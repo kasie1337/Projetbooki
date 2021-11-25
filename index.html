@@ -38,18 +38,19 @@
             <label class="loc_back" for="search">
                 <i class="fas fa-map-marker-alt"></i>
             </label>
-            <input class="border_style" type="search" id="search" value="Marseille, France">
+            <input class="border_style" type="search" id="search" value= "Marseille, France" >
             <button class="button_search" type="button">Rechercher</button>
         </div>
         <h3 class="margin_filtre">Filtres</h3>
         <a href="#">
-            <button class="style_button"><i class="fas fa-money-bill-wave"></i>Économique</button>
-            <button class="style_button"><i class="fas fa-child" id="child"></i>Familial</button>
-            <button class="style_button"><i class="fas fa-heart"></i>Romantique</button>
-            <button class="style_button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+            <button class="style_button"><i class="fas fa-money-bill-wave"></i><span class="button_filtre">Économique</span></button>
+            <button class="style_button"><i class="fas fa-child" id="child"></i><span class="button_filtre">Familial</span></button>
+            <button class="style_button"><i class="fas fa-heart"></i><span class="button_filtre">Romantique</span></button>
+            <button class="style_button"><i class="fas fa-dog"></i><span class="button_filtre">Animaux autorisés</span></button>
         </a>
 
-        <p><i class="fas fa-info" id="logo_info"></i><span class="police_nt">Plus de 500 logements sont disponibles dans cette ville</span></p>
+        <p><i class="fas fa-info" id="logo_info"></i><span class="police_nt">Plus de 500 logements sont disponibles dans cette ville</span>
+        </p>
     </form>
 
 </header>
@@ -57,14 +58,14 @@
 
 <section class="section_accomodation" id="accomodations">
 
-    <header>
+    <header class="header_accomodation">
         <h1>Hébergements à Marseille</h1>
     </header>
 
     <a class="position_a" href="css/images/bed_topsplit.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
+                <picture class="accomodation_picture">
                     <img src="css/images/bed_topsplit.jpg" class="picture_a"
                          alt="lit superposer en métal noir">
                 </picture>
@@ -84,11 +85,11 @@
     </a>
 
     <a class="position_b" href="css/images/bedroom_split_bed.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
+                <picture class="accomodation_picture">
                     <img src="css/images/bedroom_split_bed.jpg" class="picture_a"
-                         alt="photo deux lit simple">
+                         alt="photo deux lit simple avec mur de couleur bleu ciel">
                 </picture>
                 <figcaption class="fig_size">
                     <h2>Hôtel du port</h2>
@@ -106,10 +107,11 @@
     </a>
 
     <a class="position_c" href="css/images/mirror_bed.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
-                    <img src="css/images/mirror_bed.jpg" class="picture_a" alt="photo lit plus mirroir">
+                <picture class="accomodation_picture">
+                    <img src="css/images/mirror_bed.jpg" class="picture_a" alt="photo d'un lit avec une penderie et
+                    lampe de chevet">
                 </picture>
                 <figcaption class="fig_size">
                     <h2>Hôtel Les mouettes</h2>
@@ -127,11 +129,11 @@
     </a>
 
     <a class="position_d" href="css/images/bedroom_marine.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
-                    <img src="css/images/bedroom_marine.jpg" class="picture_a" alt="photo lit double style
-                        marin">
+                <picture class="accomodation_picture">
+                    <img src="css/images/bedroom_marine.jpg" class="picture_a" alt="photo d'un lit double de couleur
+                        marine">
                 </picture>
                 <figcaption class="fig_size">
                     <h2>Hôtel de la mer</h2>
@@ -149,11 +151,11 @@
     </a>
 
     <a class="position_e" href="css/images/bed_split_wood.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
+                <picture class="accomodation_picture">
                     <img src="css/images/bed_split_wood.jpg" class="picture_a"
-                         alt="photo lit superposer en bois">
+                         alt="photo d'un lit superposer en bois">
                 </picture>
                 <figcaption class="fig_size">
                     <h2>Auberge Le Panier</h2>
@@ -171,11 +173,11 @@
     </a>
 
     <a class="position_f" href="css/images/bed_window.jpg">
-        <article>
+        <article class="size_height">
             <figure class="size_img">
-                <picture>
+                <picture class="accomodation_picture">
                     <img src="css/images/bed_window.jpg" class="picture_a"
-                         alt="photo deux lit simple avec un bureau">
+                         alt="photo de deux lit simple avec un bureau">
                 </picture>
                 <figcaption class="fig_size">
                     <h2>Hôtel chez Amina</h2>
@@ -199,7 +201,7 @@
 <section class="section_ranked">
 
     <header class="graph">
-        <h1>Les plus populaires
+        <h1 class="title_popularity">Les plus populaires
             <i class="fas fa-chart-line"></i>
         </h1>
     </header>
@@ -207,9 +209,9 @@
     <a class="display_a" href="css/images/bedroom_gold.jpg">
         <article class="border_case">
             <figure class="position_ranked">
-                <picture>
+                <picture class="ranked_picture">
                     <img src="css/images/bedroom_gold.jpg" class="range_picture"
-                         alt="photo lit double avec un lustre et un miroir">
+                         alt="photo d'un lit double avec un lustre et un miroir au plafond">
                 </picture>
                 <figcaption class="padding_top">
                     <h2 class="line_height">Hôtel Le soleil du matin</h2>
@@ -229,9 +231,9 @@
     <a class="display_a" href="css/images/bedroom_design.jpg">
         <article class="border_case">
             <figure class="position_ranked">
-                <picture>
+                <picture class="ranked_picture">
                     <img src="css/images/bedroom_design.jpg" class="range_picture"
-                         alt="photo chambre lit double et petite mezannine ">
+                         alt="photo d'une chambre avec un lit double et une petite mezannine en métal ">
                 </picture>
                 <figcaption class="padding_top">
                     <h2 class="line_height">Au coeur de l'eau Chambres d'hôtes</h2>
@@ -251,9 +253,9 @@
     <a class="display_a" href="css/images/head_bedroom.jpg">
         <article class="border_case">
             <figure class="position_ranked">
-                <picture>
+                <picture class="ranked_picture">
                     <img src="css/images/head_bedroom.jpg" class="range_picture"
-                         alt="photo chambre lit double avec tête de lit">
+                         alt="photo d'une chambre avec un lit double avec une tête de lit en bois">
                 </picture>
                 <figcaption class="padding_top">
                     <h2 class="line_height">Hôtel tout bleu et Blanc</h2>
@@ -278,9 +280,9 @@
     </header>
 
     <a class="item_a" href="css/images/vieux_port.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie">
+            <figure class="figure_height">
+                <picture class="activitie_height">
                     <img src="css/images/vieux_port.jpg" class="screen_boat"
                          alt="photo de bateau">
                 </picture>
@@ -292,11 +294,11 @@
     </a>
 
     <a class="item_b" href="css/images/fort_de_pomegues.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie_pormegues">
+            <figure class="figure_height">
+                <picture class="activitie_height">
                     <img src="css/images/fort_de_pomegues.jpg" class="screen_top"
-                         alt="photo fort en pierre de pomegues">
+                         alt="photo du fort en pierre de pomegues">
                 </picture>
                 <figcaption class="fig_activitie">
                     <h2 class="activitie_police">Fort de Pomègues</h2>
@@ -306,11 +308,11 @@
     </a>
 
     <a class="item_e" href="css/images/ile_de_frioul.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie">
+            <figure class="figure_height_frioul">
+                <picture class="activitie_height">
                     <img src="css/images/ile_de_frioul.jpg" class="screen"
-                         alt="photo téléscope vue sur la mer">
+                         alt="photo d'un téléscope vue sur la mer">
                 </picture>
                 <figcaption class="fig_activitie">
                     <h2 class="activitie_police">Îles du Frioul</h2>
@@ -320,11 +322,11 @@
     </a>
 
     <a class="item_c" href="css/images/parc_national.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie">
+            <figure class="figure_height">
+                <picture class="activitie_height">
                     <img src="css/images/parc_national.jpg" class="screen_boat"
-                         alt="photo crique des Calanques vue sur la mer">
+                         alt="photo de la crique des Calanques avec vue sur la mer">
                 </picture>
                 <figcaption class="fig_activitie">
                     <h2 class="activitie_police">Parc National des Calanques</h2>
@@ -334,11 +336,11 @@
     </a>
 
     <a class="item_d" href="css/images/notre_dame.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie_dame">
+            <figure class="figure_height">
+                <picture class="activitie_height">
                     <img src="css/images/notre_dame.jpg" class="screen_dame"
-                         alt="photo de la ville avec arriere plan cathedrale Notre-Dame">
+                         alt="photo de la ville de Marseille avec en arriere plan la cathedrale Notre-Dame">
                 </picture>
                 <figcaption class="fig_activitie">
                     <h2 class="activitie_police">Notre-Dame-de-la-Garde</h2>
@@ -348,11 +350,11 @@
     </a>
 
     <a class="item_f" href="css/images/parc_longchamp.jpg">
-        <article>
-            <figure>
-                <picture>
+        <article class="aside_activitie">
+            <figure class="figure_height_parc">
+                <picture class="activitie_height">
                     <img src="css/images/parc_longchamp.jpg" class="screen_longchamp"
-                         alt="photo édifice en pierre du parc de Longchamp">
+                         alt="photo d'un édifice en pierre situé au parc de Longchamp">
                 </picture>
                 <figcaption class="fig_activitie">
                     <h2 class="activitie_police">Parc Longchamp</h2>
@@ -365,28 +367,28 @@
 
 <footer class="bottom_page">
     <div class="footer_place">
-    <section class="footer_page">
-        <h1>A propos</h1>
-        <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-        </ul>
-    </section>
-    <section class="footer_page">
-        <h1>Nos hébergements</h1>
-        <ul>
-            <li>Chartes qualité</li>
-            <li>Soumettre votre hôtel</li>
-        </ul>
-    </section>
-    <section class="footer_page">
-        <h1>Assistance</h1>
-        <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
-    </section>
+        <section class="footer_page">
+            <h1>A propos</h1>
+            <ul>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </section>
+        <section class="footer_page">
+            <h1>Nos hébergements</h1>
+            <ul>
+                <li>Chartes qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+        </section>
+        <section class="footer_page">
+            <h1>Assistance</h1>
+            <ul>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </section>
     </div>
 </footer>
 </body>

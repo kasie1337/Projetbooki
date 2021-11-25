@@ -12,21 +12,20 @@
 .police {
     font-family: 'Raleway', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr 1fr 0.9fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
     position: relative;
-    width: 1300px;
+    padding: 0 30px;
     margin: auto;
     grid-gap: 20px;
     grid-template-areas: "header header"
 "accomodation popularity"
 "activitie activitie"
 "footer footer";
-
 }
 
-.police h1 {
-    font-size: 1rem;
+
+.police h1,h2 {
+    font-size: 1.24rem;
 }
 
 .police_nt {
@@ -45,8 +44,8 @@
 
 .logo_index {
     display: flex;
-    flex-grow: 5;
-    margin-left: 30px;
+    flex-grow: 20;
+
 }
 
 .logo_agence {
@@ -58,7 +57,7 @@
 
 .activitie {
     display: flex;
-    flex-grow: 1;
+
     justify-content: start;
     align-items: center;
     font-size: 70%;
@@ -68,7 +67,7 @@
 
 .accomodation {
     display: flex;
-    flex-grow: 10;
+    flex-grow: 2;
     justify-content: end;
     align-items: center;
     font-size: 70%;
@@ -77,11 +76,10 @@
 
 .margin_form {
     margin-top: 25px;
-    margin-left: 30px;
 }
 
-.margin_form > p {
-    font-size: 0.6rem;
+.margin_form  p {
+    font-size: 1rem;
 }
 
 .barre_search {
@@ -94,35 +92,39 @@
     color: black;
     border: solid white;
     border-radius: 20px;
-    width: 300px;
-    height: 135px;
+    height: 150px;
+    margin-top: 30px;
+
 }
 
 .border_style {
     border-style: solid;
     border-right: unset;
     border-color: #f5ced2;
+    padding: 0 20px;
+    width: 300px;
 }
 
 .button_search {
     background-color: blueviolet;
     color: white;
-    width: 130px;
-    border-style: solid;
+    padding: 5px;
+
     border-color: blueviolet;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0 10px 10px 0;
+    border: none;
 }
 
 .style_button {
     border-radius: 20px;
-    padding-right: 1em;
-    margin-right: 20px;
-    border: solid 1px #0034d159;
+    border: solid 2px #0034d159;
     background-color: white;
 
-}
 
+}
+.button_filtre{
+    padding: 0 10px
+}
 .style_button:hover {
     box-shadow: 0 0 0 0 rgba(8, 14, 44, 1);
     animation: pulse 1.3s alternate forwards;
@@ -135,11 +137,14 @@
 }
 
 .style_button i {
-    padding: 10px;
-    background-color: #0034d159;
-    border-radius: 21px;
-    margin-right: 10px;
+
+    margin: -2px;
     color: #0065FC;
+    line-height: 40px;
+    width: 40px;
+    background-color: cyan;
+    border-radius: 21px;
+    height: 40px;
 }
 
 #child {
@@ -158,7 +163,7 @@
     margin-right: 10px;
     color: #0065FC;
     border: #00000045 solid 1px;
-    padding: 5px;
+    line-height: 20px;
     border-radius: 20px;
     width: 20px;
     height: 20px;
@@ -171,14 +176,14 @@
 }
 
 .filtre i {
-    padding: 0.5em;
+
     border-radius: 20px;
 
     background-color: #4f7017;
 }
 
 .information {
-    font-size: 0.70em;
+
 }
 
 .information i {
@@ -188,12 +193,14 @@
     margin-right: 10px;
     padding: 0.5em;
 }
-
+.header_accomodation{
+    grid-area: header;
+}
 #accomodations {
     display: grid;
     grid-area: accomodation;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 20px 180px 180px 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40px repeat(2,230px) auto;
     padding: 20px;
     grid-gap: 30px;
     background-color: #d5d5d5;
@@ -202,7 +209,7 @@
     grid-template-areas: "header header header"
                          "item_a item_b item_c"
                          "item_d item_e item_f";
-    margin-left: 30px;
+
 }
 
 .position_a {
@@ -231,130 +238,132 @@
 
 .margin_title {
     font-size: 0.8rem;
-    grid-column-start: 1;
+
 }
 
 .picture_a {
-    width: 300px;
-    height: 115px;
+height: 100%;
     border: solid white;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
+.size_height{
+    height: 100%;
+    position: relative;
+}
 .size_img {
-    width: 245px;
+    height: 100%;
+}
+.accomodation_picture{
+    height: calc(100% - 85px);
+}
+.position_a {
+
 }
 
-.position_a {
-    grid-column-start: 1;
-}
 
 .section_ranked {
     grid-area: popularity;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20px 135px 135px 135px;
-    grid-template-areas: "header"
-                         "articlea"
-                         "articleb"
-                         "articlec";
-    grid-gap: 30px;
-
     background-color: #d5d5d5;
-    border-radius: 20px;
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
-    margin-left: 10px;
+    border-radius: 20px;
+
 }
 
+
+.position_ranked {
+display: flex;
+    height: 100%;
+}
+.ranked_picture{
+    width: calc(100% - 65%);
+}
 .display_a {
-    display: grid;
-    justify-content: center;
+
 }
 
 .graph {
-    grid-area: header;
-    margin-bottom: 10px;
-    margin-left: 35px;
-}
 
+    width: 100%;
+}
+.title_popularity{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .graph i {
-    margin-left: 40%;
-    display: inline-block;
-    font-size: 1.2rem;
+
+font-size: 1.2rem;
 }
 
 .range_picture {
-    height: 130px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
+
 }
 
 .fig_ranked {
-    display: inline-block;
-    vertical-align: top;
+
 }
 
 .fig_size {
-    height: 65px;
-    padding-left: 10px;
+    height: 85px;
+   padding: 5px 10px;
     border-top: 1px solid white;
     background-color: white;
     border-radius: 0 0 15px 15px;
-    width: 245px;
-    font-size: 0.6rem;
     color: black;
 }
 
 .padding_top {
-    font-size: 0.6rem;
+
     position: relative;
-    border: white;
+    width: 65%;
+    border: none;
     border-radius: 0 15px 15px 0;
     background-color: white;
     padding: 10px;
 }
-
-.position_ranked {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    height: 130px;
+.line_height {
+    line-height: 1;
+    margin-bottom: 5px;
 }
+
 
 .title_bottom {
     display: block;
-    font-size: 0.6rem;
+
 }
 
 .padding_word {
-    font-size: 0.9rem;
+
 }
 
 .color_price {
-    font-size: 0.8rem;
+
     font-family: Ralewaynt, sans-serif;
 }
 
 .star {
     color: #0065FC;
     font-size: 0.6rem;
+    position: absolute;
+    bottom: 5px;
+
 }
 
 .star_ranked {
     position: absolute;
-    top: 65px;
-    font-size: 0.6rem;
     padding-top: 40px;
     padding-bottom: 5px;
     color: #0065FC;
+    bottom: 0;
 }
 
-.line_height {
-    line-height: 1;
-    width: 130px;
-    margin-bottom: 5px;
-}
+
 
 .star_grey {
     color: #d5d5d5;
@@ -363,14 +372,18 @@
 .loc_back {
     display: flex;
     background-color: #f5ced2;
-    align-items: center; /*--localisation icone--*/
-    padding: 0.9em;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    align-items: center;
+    width: 40px ;
+    height: 40px;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+                                                                              /*--localisation icone--*/
+
+
 }
 
 .filtre h3 {
-    font-size: 0.90em;
+
 }
 
 .picture_hotel_ranked {
@@ -380,21 +393,21 @@
 }
 
 .picture_hotel_ranked h2 {
-    font-size: 0.70em;
+
 }
 
 .picture_hotel_ranked p {
-    font-size: 0.70em;
+
 }
 
 
 .pad_bot {
     display: inline-block;
-    margin-left: 25px;
+
 }
 
 .activitie_police {
-    font-size: 0.90em;
+
     padding: 5px 0 5px 10px;
     color: black;
 }
@@ -409,33 +422,33 @@
 }
 
 .screen {
-    height: 100px;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .screen_longchamp {
-    height: 160px;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    object-position: top;
+
 }
 
 .screen_dame {
-    height: 140px;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     object-position: top;
 }
 
 .screen_top {
-    height: 200px;
+height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .screen_boat {
-    height: 375px;
+height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -445,15 +458,42 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 200px 200px;
     grid-template-areas: "header header header header"
-"item_a item_b item_c item_d"
-"item_a item_e item_c item_f";
+                         "item_a item_b item_c item_d"
+                          "item_a item_e item_c item_f";
     grid-area: activitie;
-    grid-gap: 25px;
-    width: 1230px;
-    margin-left: 30px;
-    position: relative;
-}
+    grid-gap: 20px;
 
+
+    ;
+}
+.activitie_height{
+    height: calc(100% - 70px);
+}
+.aside_activitie{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.aside_activitie_dame{
+    height: calc(100% - 5%);
+}
+.figure_height_parc{
+    height: calc(100% + 5%);
+}
+.aside_activitie_pormegues{
+    width: 100%;
+    height: calc(100% + 20%);
+}
+.aside_activitie_frioul{
+    display: flex;
+    align-items: end;
+}
+.figure_height{
+    height: 100%;
+}
+.figure_height_frioul{
+    height: calc(100% - 20%);
+}
 .item_a {
     grid-area: item_a;
     border-radius: 20px;
@@ -473,15 +513,15 @@
 
 .item_f {
     grid-area: item_f;
-    position: absolute;
-    width: 288px;
-    bottom: 0;
+
+
+
 }
 
 .item_e {
     grid-area: item_e;
-    display: grid;
-    align-items: end;
+
+
 }
 
 .margin_aside > header {
@@ -489,7 +529,7 @@
 }
 
 .fig_activitie {
-    height: 50px;
+    height: 70px;
     padding: 10px;
     background-color: white;
     border-radius: 0 0 20px 20px;
@@ -502,13 +542,13 @@
     grid-area: footer;
     background-color: #d5d5d5;
     margin-top: 30px;
-    width: 1300px;
-   position: absolute;
+
+
     bottom: 55px;
 }
 
 .footer_page {
-    width: 255px;
+
 }
 
 .footer_page li {
@@ -519,5 +559,5 @@
 .footer_place {
     display: flex;
     justify-content: space-between;
-    width: 1120px;
+
 }
