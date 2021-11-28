@@ -9,7 +9,7 @@
 }
 
 .police {
-    max-width: 1500px;
+
     font-family: 'Raleway', sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -56,9 +56,13 @@ button{
 
 .navigation {
     display: flex;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.nav_inside{
+    display: flex;
+    grid-area: header;
+}
 .logo_index {
     display: flex;
     flex-grow: 20;
@@ -77,16 +81,14 @@ button{
     justify-content: start;
     align-items: center;
     margin-left: 50px;
-    grid-area: nav;
+
 
 }
 
 .accomodation {
     display: flex;
-    flex-grow: 2;
     justify-content: end;
     align-items: center;
-    grid-area: nav;
     color: #0065FC;
 }
 
@@ -125,7 +127,9 @@ button{
     border: none;
     font-size: 1.35rem;
 }
-
+.filtre_responsive{
+    display: inline-block;
+}
 .style_button {
     border-radius: 20px;
     border: solid 2px #F2F2F2;
@@ -415,9 +419,11 @@ height: 100%;
                           "item_a item_e item_c item_f";
     grid-area: activitie;
     grid-gap: 20px;
+
 }
 .activitie_police {
     padding: 10px  5px 10px;
+    color: black;
 
 }
 .activitie_height{
@@ -505,4 +511,42 @@ width: 100%;
 .footer_place {
     display: flex;
     width: 100%;
+}
+@media all and (max-width: 768px){
+ .police{
+     grid-template-areas: "header"
+                          "header"
+                          "popularity"
+                           "accomodation"
+                           "activitie"
+                            "footer";
+     grid-template-columns: 1fr;
+ }
+    .navigation{
+display: block;
+    }
+    .logo_index{
+        display: flex;
+        justify-content: center;
+    }
+    .nav_inside{
+        display: flex;
+        justify-content: space-around;
+    }
+    .accomodation{
+        display: unset;
+    }
+    .activitie{
+        display: unset;
+    }
+.margin_filtre{
+    display: block;
+}
+.filtre_responsive{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.style_button{
+    margin-bottom: 10px;
+}
 }
