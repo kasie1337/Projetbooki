@@ -10,41 +10,49 @@
 
 .police {
 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', "Segoe UI Black", sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    position: relative;
-    padding: 0 30px;
-    margin: auto;
-    grid-gap: 40px;
+    padding: 0 40px;
+    grid-gap: 30px;
     grid-template-areas: "header header"
 "accomodation popularity"
 "activitie activitie"
 "footer footer";
 }
-a:visited {color: black}
+
+a:visited {
+    color: black
+}
 
 :root {
     font-size: 12px;
 }
-h1{
+
+h1 {
     font-size: 1.70rem;
 }
-h2{
+
+h2 {
     font-size: 1.40rem;
 }
-p{
+
+p {
     font-size: 1.30rem;
 }
-li{
+
+li {
     font-size: 1.15rem;
 }
-button{
+
+button {
     font-size: 0.50rem;
 }
+
 .fas {
     font-size: 1rem;
 }
+
 .police_nt {
     font-family: Ralewaynt, sans-serif;
 }
@@ -56,42 +64,42 @@ button{
 
 .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.nav_inside{
-    display: flex;
-    grid-area: header;
-}
-.logo_index {
-    display: flex;
-    flex-grow: 20;
+    height: 80px;
 }
 
-.logo_agence {
+.navigation > a:nth-child(1) {
+    flex-grow: 20;
+
+}
+
+.navigation > a > img {
     width: 100px;
-    margin-top: 15px;
-    margin-left: 15px;
     object-fit: cover;
 }
 
 .activitie {
     display: flex;
     color: #0065FC;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin-left: 50px;
-
-
+    flex-grow: 1;
+    height: 80px;
+    padding-top: 2px;
+    border-top: 2px solid;
 }
 
 .accomodation {
     display: flex;
-    justify-content: end;
     align-items: center;
     color: #0065FC;
+    flex-grow: 1;
+    height: 80px;
+    justify-content: center;
+    padding-top: 2px;
+    border-top: 2px solid;
 }
-
 .margin_form {
     margin-top: 25px;
 }
@@ -104,10 +112,11 @@ button{
 
 .border_case {
     color: black;
-    border: 5px solid white;
+    padding: 5px;
+    background-color: white;
     border-radius: 20px;
-    height: 150px;
-    margin-top: 30px;
+    height: 100%;
+
 }
 
 .border_style {
@@ -127,18 +136,24 @@ button{
     border: none;
     font-size: 1.35rem;
 }
-.filtre_responsive{
+
+.filtre_responsive {
     display: inline-block;
 }
+
 .style_button {
     border-radius: 20px;
     border: solid 2px #F2F2F2;
     background-color: white;
-    font-size: 1.35rem
+    font-size: 1.35rem;
+    margin-right: 10px;
+
 }
-.button_filtre{
+
+.button_filtre {
     padding: 0 10px
 }
+
 .style_button:hover {
     box-shadow: 0 0 0 0 rgba(8, 14, 44, 1);
     animation: pulse 1.3s alternate forwards;
@@ -171,6 +186,7 @@ button{
     display: inline-block;
 }
 
+
 #logo_info {
     margin-right: 10px;
     color: #0065FC;
@@ -196,14 +212,16 @@ button{
     margin-right: 10px;
     padding: 0.5em;
 }
-.header_accomodation{
+
+.header_accomodation {
     grid-area: header;
 }
+
 #accomodations {
     display: grid;
     grid-area: accomodation;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 40px repeat(2,230px) auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px repeat(2, 230px) auto;
     padding: 20px;
     grid-gap: 30px;
     background-color: #F2F2F2;
@@ -240,23 +258,29 @@ button{
 }
 
 .picture_a {
-height: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
-.size_height{
+
+.size_height {
     height: 100%;
     position: relative;
-    border: 5px solid white;
     border-radius: 20px;
+    box-shadow: 0 5px 5px silver;
+    padding: 5px;
+    background-color: white;
 
 }
+
 .size_img {
     height: 100%;
 }
-.accomodation_picture{
+
+.accomodation_picture {
     height: calc(100% - 75px);
 }
+
 .position_a {
 
 }
@@ -264,31 +288,39 @@ height: 100%;
 .section_ranked {
     grid-area: popularity;
     background-color: #F2F2F2;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     padding: 20px;
     border-radius: 20px;
+    grid-template-rows: 40px repeat(3, 150px);
+    grid-gap: 30px;
 
 }
+
 .position_ranked {
-display: flex;
+    display: flex;
     height: 100%;
+    width: 100%;
 }
-.ranked_picture{
+
+.ranked_picture {
     width: calc(100% - 65%);
+
 }
 
 .graph {
     width: 100%;
 }
-.graph i{
+
+.graph i {
     font-size: 1.90rem;
 }
-.title_popularity{
+
+.title_popularity {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .range_picture {
     height: 100%;
     object-fit: cover;
@@ -298,7 +330,7 @@ display: flex;
 
 .fig_size {
     height: 75px;
-   padding: 5px 10px;
+    padding: 5px 10px;
     border-top: 1px solid white;
     background-color: white;
     border-radius: 0 0 15px 15px;
@@ -310,9 +342,9 @@ display: flex;
     width: 65%;
     border: none;
     border-radius: 0 15px 15px 0;
-    background-color: white;
     padding: 10px;
 }
+
 .line_height {
     width: 70%;
     line-height: 1;
@@ -330,7 +362,7 @@ display: flex;
 .star {
     color: #0065FC;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
 
 }
 
@@ -351,11 +383,11 @@ display: flex;
     display: flex;
     background-color: #F2F2F2;
     align-items: center;
-    width: 40px ;
+    width: 40px;
     height: 40px;
     justify-content: center;
     border-radius: 10px 0 0 10px;
-                                                                              /*--localisation icone--*/
+    /*--localisation icone--*/
 
 }
 
@@ -388,6 +420,7 @@ display: flex;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    width: 100%;
 
 }
 
@@ -399,13 +432,13 @@ display: flex;
 }
 
 .screen_top {
-height: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .screen_boat {
-height: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -413,47 +446,62 @@ height: 100%;
 .margin_aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 200px 200px;
+    grid-template-rows: auto 200px 50px 200px;
     grid-template-areas: "header header header header"
                          "item_a item_b item_c item_d"
+                          "item_a item_b item_c item_f"
                           "item_a item_e item_c item_f";
     grid-area: activitie;
     grid-gap: 20px;
 
 }
+
 .activitie_police {
-    padding: 10px  5px 10px;
+    padding: 10px 5px 10px;
     color: black;
 
 }
-.activitie_height{
+
+.activitie_height {
     height: calc(100% - 70px);
+
 }
-.aside_activitie{
+
+.aside_activitie {
     height: 100%;
     display: flex;
     align-items: end;
+
 }
-.aside_activitie_dame{
-    height: calc(100% - 5%);
+
+.aside_activitie_dame {
+   height: 100%;
 }
-.figure_height_parc{
-    height: calc(100% + 5%);
-}
-.aside_activitie_pormegues{
+
+.figure_height_parc {
+   height: 100%;
     width: 100%;
-    height: calc(100% + 20%);
 }
-.aside_activitie_frioul{
-    display: flex;
-    align-items: end;
-}
-.figure_height{
+
+.aside_activitie_pormegues {
     height: 100%;
 }
-.figure_height_frioul{
-    height: calc(100% - 20%);
+
+.aside_activitie_frioul {
+    height: 100%;
+
 }
+
+.figure_height {
+    height: 100%;
+
+}
+
+.figure_height_frioul {
+    height: 100%;
+    width: 100%;
+}
+
 .item_a {
     grid-area: item_a;
     border-radius: 20px;
@@ -500,7 +548,7 @@ height: 100%;
 }
 
 .footer_page {
-width: 100%;
+    width: 100%;
 }
 
 .footer_page li {
@@ -512,41 +560,4 @@ width: 100%;
     display: flex;
     width: 100%;
 }
-@media all and (max-width: 768px){
- .police{
-     grid-template-areas: "header"
-                          "header"
-                          "popularity"
-                           "accomodation"
-                           "activitie"
-                            "footer";
-     grid-template-columns: 1fr;
- }
-    .navigation{
-display: block;
-    }
-    .logo_index{
-        display: flex;
-        justify-content: center;
-    }
-    .nav_inside{
-        display: flex;
-        justify-content: space-around;
-    }
-    .accomodation{
-        display: unset;
-    }
-    .activitie{
-        display: unset;
-    }
-.margin_filtre{
-    display: block;
-}
-.filtre_responsive{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.style_button{
-    margin-bottom: 10px;
-}
-}
+
