@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', "Segoe UI Black",sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 }
 
 @font-face {
-    font-family: 'Ralewaynt', sans-serif;
+    font-family: 'Ralewaynt',"Segoe UI Black",sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 }
 
@@ -12,7 +12,7 @@
 
     font-family: 'Raleway', "Segoe UI Black", sans-serif;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 0 40px;
     grid-gap: 30px;
     grid-template-areas: "header header"
@@ -22,7 +22,9 @@
 }
 
 a:visited {
-    color: black
+    color: black;
+    border-top: 2px solid white;
+    padding-top: 2px;
 }
 
 :root {
@@ -54,12 +56,12 @@ button {
 }
 
 .police_nt {
-    font-family: Ralewaynt, sans-serif;
+    font-family: Ralewaynt, "Segoe UI Black",sans-serif;
 }
 
 .header_grid {
     grid-area: header;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', "Segoe UI Black",sans-serif;
 }
 
 .navigation {
@@ -100,9 +102,6 @@ button {
     padding-top: 2px;
     border-top: 2px solid;
 }
-.margin_form {
-    margin-top: 25px;
-}
 
 .barre_search {
     display: flex;
@@ -116,6 +115,7 @@ button {
     background-color: white;
     border-radius: 20px;
     height: 100%;
+    box-shadow: 5px 5px 5px silver;
 
 }
 
@@ -155,13 +155,13 @@ button {
 }
 
 .style_button:hover {
-    box-shadow: 0 0 0 0 rgba(8, 14, 44, 1);
-    animation: pulse 1.3s alternate forwards;
+    box-shadow: 0 0 0 0 rgba(8, 14, 44, 0.1);
+    animation: pulse 0.5s alternate forwards;
 }
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 10px rgba(8, 14, 44, 0.01);
+        box-shadow: 0 0 0 5px rgba(8, 14, 44, 0.01);
     }
 }
 
@@ -309,17 +309,15 @@ button {
 
 .graph {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .graph i {
     font-size: 1.90rem;
 }
 
-.title_popularity {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .range_picture {
     height: 100%;
@@ -341,7 +339,6 @@ button {
     position: relative;
     width: 65%;
     border: none;
-    border-radius: 0 15px 15px 0;
     padding: 10px;
 }
 
@@ -384,10 +381,10 @@ button {
     background-color: #F2F2F2;
     align-items: center;
     width: 40px;
+                                                                /*--localisation icone--*/
     height: 40px;
     justify-content: center;
     border-radius: 10px 0 0 10px;
-    /*--localisation icone--*/
 
 }
 
@@ -452,7 +449,7 @@ button {
                           "item_a item_b item_c item_f"
                           "item_a item_e item_c item_f";
     grid-area: activitie;
-    grid-gap: 20px;
+    grid-gap: 30px;
 
 }
 
@@ -471,11 +468,15 @@ button {
     height: 100%;
     display: flex;
     align-items: end;
-
+    background: white;
+    box-shadow: 3px 3px 3px silver;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .aside_activitie_dame {
    height: 100%;
+    box-shadow: 3px 3px 3px silver;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .figure_height_parc {
@@ -485,6 +486,8 @@ button {
 
 .aside_activitie_pormegues {
     height: 100%;
+    box-shadow: 3px 3px 3px silver;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .aside_activitie_frioul {
@@ -534,9 +537,6 @@ button {
 .fig_activitie {
     height: 70px;
     padding: 10px;
-    background-color: white;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 2px 2px 2px #00000040;
 }
 
 .bottom_page {
@@ -545,6 +545,7 @@ button {
     background-color: #F2F2F2;
     margin-top: 30px;
     bottom: 55px;
+    display: flex;
 }
 
 .footer_page {
