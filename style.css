@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Raleway', "Segoe UI Black",sans-serif;
+    font-family: 'Raleway', sans-serif,"Segoe UI Black";
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 }
 
 @font-face {
-    font-family: 'Ralewaynt',"Segoe UI Black",sans-serif;
+    font-family: 'Ralewaynt';
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 }
 
 .police {
 
-    font-family: 'Raleway', "Segoe UI Black", sans-serif;
+    font-family: "Raleway", 'Segoe UI Black', 'sans-serif';
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 0 40px;
+    grid-template-columns: 2fr 1fr;
+
     grid-gap: 30px;
     grid-template-areas: "header header"
 "accomodation popularity"
@@ -56,18 +56,20 @@ button {
 }
 
 .police_nt {
-    font-family: Ralewaynt, "Segoe UI Black",sans-serif;
+    font-family: 'Raleway','Segoe UI Black','sans-serif';
 }
 
 .header_grid {
     grid-area: header;
-    font-family: 'Raleway', "Segoe UI Black",sans-serif;
+    font-family: 'Raleway','Segoe UI Black','sans-serif';
+    padding: 0 40px 0 40px;
 }
 
 .navigation {
     display: flex;
     align-items: center;
     height: 80px;
+
 }
 
 .navigation > a:nth-child(1) {
@@ -88,10 +90,11 @@ button {
     margin-left: 50px;
     flex-grow: 1;
     height: 80px;
-    padding-top: 2px;
-    border-top: 2px solid;
+    border-top: 2px solid transparent;
 }
-
+.activitie:hover{
+    border-top: 2px solid #0065FC;
+}
 .accomodation {
     display: flex;
     align-items: center;
@@ -99,10 +102,11 @@ button {
     flex-grow: 1;
     height: 80px;
     justify-content: center;
-    padding-top: 2px;
-    border-top: 2px solid;
+    border-top: 2px solid transparent;
 }
-
+.accomodation:hover{
+    border-top: 2px solid #0065FC;
+}
 .barre_search {
     display: flex;
     margin-bottom: 20px;
@@ -115,7 +119,7 @@ button {
     background-color: white;
     border-radius: 20px;
     height: 100%;
-    box-shadow: 5px 5px 5px silver;
+    box-shadow: 0 5px 10px silver;
 
 }
 
@@ -170,7 +174,7 @@ button {
     color: #0065FC;
     line-height: 40px;
     width: 40px;
-    background-color: cyan;
+    background-color: #DEEBFF;
     border-radius: 21px;
     height: 40px;
 }
@@ -222,6 +226,7 @@ button {
     grid-area: accomodation;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40px repeat(2, 230px) auto;
+    margin: 0 0 0 40px;
     padding: 20px;
     grid-gap: 30px;
     background-color: #F2F2F2;
@@ -267,7 +272,7 @@ button {
     height: 100%;
     position: relative;
     border-radius: 20px;
-    box-shadow: 0 5px 5px silver;
+    box-shadow: 0 5px 10px silver;
     padding: 5px;
     background-color: white;
 
@@ -281,9 +286,7 @@ button {
     height: calc(100% - 75px);
 }
 
-.position_a {
 
-}
 
 .section_ranked {
     grid-area: popularity;
@@ -293,6 +296,7 @@ button {
     border-radius: 20px;
     grid-template-rows: 40px repeat(3, 150px);
     grid-gap: 30px;
+    margin: 0 40px 0 0;
 
 }
 
@@ -303,7 +307,7 @@ button {
 }
 
 .ranked_picture {
-    width: calc(100% - 65%);
+    width: 40%;
 
 }
 
@@ -316,7 +320,6 @@ button {
 .graph i {
     font-size: 1.90rem;
 }
-
 
 
 .range_picture {
@@ -337,7 +340,7 @@ button {
 
 .padding_top {
     position: relative;
-    width: 65%;
+    width: 60%;
     border: none;
     padding: 10px;
 }
@@ -407,38 +410,14 @@ button {
     align-items: end;
 }
 
-.screen {
+.screen_img{
     height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-.screen_longchamp {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
     width: 100%;
-
-}
-
-.screen_dame {
-    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    object-position: top;
+
 }
 
-.screen_top {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-.screen_boat {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
 
 .margin_aside {
     display: grid;
@@ -450,64 +429,34 @@ button {
                           "item_a item_e item_c item_f";
     grid-area: activitie;
     grid-gap: 30px;
-
+    padding: 0 40px 0 40px;
 }
 
 .activitie_police {
     padding: 10px 5px 10px;
     color: black;
-
 }
 
 .activitie_height {
     height: calc(100% - 70px);
-
 }
 
-.aside_activitie {
+.aside_card {
     height: 100%;
-    display: flex;
-    align-items: end;
+    width: 100%;
     background: white;
-    box-shadow: 3px 3px 3px silver;
+    box-shadow: 0 5px 10px silver;
     border-radius: 20px 20px 20px 20px;
 }
-
-.aside_activitie_dame {
-   height: 100%;
-    box-shadow: 3px 3px 3px silver;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.figure_height_parc {
-   height: 100%;
-    width: 100%;
-}
-
-.aside_activitie_pormegues {
+.figure_height{
     height: 100%;
-    box-shadow: 3px 3px 3px silver;
-    border-radius: 20px 20px 20px 20px;
 }
-
-.aside_activitie_frioul {
-    height: 100%;
-
+.fig_activitie {
+    height: 70px;
+    padding: 10px;
 }
-
-.figure_height {
-    height: 100%;
-
-}
-
-.figure_height_frioul {
-    height: 100%;
-    width: 100%;
-}
-
 .item_a {
     grid-area: item_a;
-    border-radius: 20px;
 }
 
 .item_b {
@@ -532,11 +481,6 @@ button {
 
 .margin_aside > header {
     grid-area: header;
-}
-
-.fig_activitie {
-    height: 70px;
-    padding: 10px;
 }
 
 .bottom_page {

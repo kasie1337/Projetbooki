@@ -1,0 +1,62 @@
+body {
+    background-color: red;
+
+
+}
+
+h1{
+    font-size: 1.40rem;
+}
+h2{
+    font-size: 1.10rem;
+}
+p{
+    font-size: 0.90rem;
+}
+.fas{
+    font-size: 0.70rem;
+}
+.graph i{
+    font-size: 1.40rem;
+}
+.button_filtre{
+    font-size: 1.15rem;
+}
+.police{
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    grid-gap: 20px;
+
+}
+#accomodations, .section_ranked{
+    margin: 0;
+}
+.header_grid, .margin_aside{
+    padding: 0;
+}
+#accomodations{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 180px);
+    margin: 0;
+    grid-template-areas: "header header"
+                         "item_a item_b"
+                           "item_c item_d"
+                            "item_e item_f";
+}
+.section_ranked{
+    grid-template-rows: 70px repeat(3, 150px);
+
+}
+.margin_aside{
+    grid-template-rows: auto 150px 30px 150px;
+    grid-gap: 20px;
+}
+.activitie_police{
+    padding: unset;
+}
+.activitie_height{
+    height: calc(100% - 55px);
+}
+.fig_activitie{
+    height: 55px;
+}
