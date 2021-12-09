@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalizer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablett.css" media="screen AND (max-width: 992px)">
+    <link rel="stylesheet" href="mobile.css" media="screen AND (max-width:768px)">
     <title>Booki</title>
     <script src="https://kit.fontawesome.com/9239afe8e0.js" crossorigin="anonymous"></script>
 </head>
@@ -36,7 +37,9 @@
                 <i class="fas fa-map-marker-alt"></i>
             </label>
             <input class="border_style" type="search" id="search" value="Marseille, France">
-            <button class="button_search" type="button">Rechercher</button>
+            <button class="button_search" type="button"><span class="display_search">Rechercher</span>
+                <i class="fas fa-search" id="search_fonts"></i>
+            </button>
         </div>
         <h2 class="margin_filtre">Filtres</h2>
 
@@ -45,7 +48,7 @@
         </button>
         <button class="style_button"><i class="fas fa-child" id="child"></i><span
                 class="button_filtre">Familial</span></button>
-        <button class="style_button"><i class="fas fa-heart"></i><span class="button_filtre">Romantique</span>
+        <button class="style_button" id="block_filtre"><i class="fas fa-heart"></i><span class="button_filtre" >Romantique</span>
         </button>
         <button class="style_button"><i class="fas fa-dog"></i><span
                 class="button_filtre">Animaux autorisés</span></button>

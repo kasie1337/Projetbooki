@@ -81,7 +81,9 @@ button {
     width: 100px;
     object-fit: cover;
 }
-
+#search_fonts{
+    display: none;
+}
 .activitie {
     display: flex;
     color: #0065FC;
