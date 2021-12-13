@@ -7,24 +7,7 @@
 "footer";
 }
 
-h2 {
-    font-size: 1.40rem;
-}
 
-h1 {
-    font-size: 1.90rem;
-}
-
-p {
-    font-size: 1.20rem;
-}
-
-.fas {
-    font-size: 1rem;
-}
-.graph i{
-    font-size: 1.80rem;
-}
 .navigation {
     display: block;
     text-align: center;

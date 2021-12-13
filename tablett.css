@@ -1,19 +1,7 @@
-body {
-
+:root {
+    font-size: 8px
 }
 
-h1{
-    font-size: 1.40rem;
-}
-h2{
-    font-size: 1.10rem;
-}
-p{
-    font-size: 1rem;
-}
-.fas{
-    font-size: 0.90rem;
-}
 .fig_size{
     padding: 0 10px 0 10px;
 }
