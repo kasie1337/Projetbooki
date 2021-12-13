@@ -3,13 +3,9 @@
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 }
 
-@font-face {
-    font-family: "Ralewaynt","sans-serif";
-    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-}
 
 .police {
-    font-family: "Raleway","Ralewaynt","Segoe UI Black","sans-serif";
+    font-family: "Raleway","Segoe UI Black","sans-serif";
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
