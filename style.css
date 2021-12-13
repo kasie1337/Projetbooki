@@ -9,7 +9,7 @@
 }
 
 .police {
-    font-family: 'Raleway','Ralewaynt',Segoe UI Black, sans-serif;
+    font-family: "Raleway","Ralewaynt",Segoe UI Black, sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
