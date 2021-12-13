@@ -9,10 +9,13 @@ h2{
     font-size: 1.10rem;
 }
 p{
-    font-size: 0.90rem;
+    font-size: 1rem;
 }
 .fas{
-    font-size: 0.70rem;
+    font-size: 0.90rem;
+}
+.fig_size{
+    padding: 0 10px 0 10px;
 }
 .graph i{
     font-size: 1.40rem;
@@ -24,7 +27,6 @@ p{
     grid-template-columns: 1fr 1fr;
     padding: 0;
     grid-gap: 20px;
-
 }
 #accomodations, .section_ranked{
     margin: 0;

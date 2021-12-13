@@ -12,17 +12,19 @@ h2 {
 }
 
 h1 {
-    font-size: 1.70rem;
+    font-size: 1.90rem;
 }
 
 p {
-    font-size: 1.30rem;
+    font-size: 1.20rem;
 }
 
 .fas {
     font-size: 1rem;
 }
-
+.graph i{
+    font-size: 1.80rem;
+}
 .navigation {
     display: block;
     text-align: center;
@@ -32,6 +34,8 @@ p {
 .logo_index {
     display: flex;
     justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .accomodation, .activitie {
@@ -40,12 +44,15 @@ p {
     width: 50%;
     margin-right: -3px;
     margin-left: 0;
-    text-align: center;
-    height: 50px;
+    height: 30px;
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
     border-top: none;
+    margin-bottom: 20px;
 
+}
+.margin_form{
+    padding: 0 25px 0 25px;
 }
 .accomodation:hover{
     border-top: none;
@@ -59,8 +66,15 @@ p {
 #search_fonts{
     display: block;
 }
+.button_search{
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -3px;
+}
 #block_filtre{
     display: block;
+}
+.border_style{
+    width: auto;
 }
 .margin_filtre {
     display: block;
@@ -77,6 +91,8 @@ p {
 
 .section_ranked {
     grid-template-rows: auto repeat(3, 150px) auto;
+    border-radius: unset;
+    padding: 25px;
 }
 
 #accomodations {
@@ -90,7 +106,7 @@ p {
 "item_e"
 "item_f";
     background-color: unset;
-    padding: 30px;
+    padding: 0 25px 0 25px;
 }
 
 .margin_aside {
@@ -103,7 +119,7 @@ p {
 "item_d"
 "item_e"
 "item_f";
-    padding: 30px;
+    padding: 0 25px 0 25px;
 }
 
 .bottom_page {

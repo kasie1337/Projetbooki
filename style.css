@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Raleway', sans-serif,"Segoe UI Black";
+    font-family: 'Raleway',sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 }
 
 @font-face {
-    font-family: 'Ralewaynt';
-    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+    font-family: 'Ralewaynt',sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 }
 
 .police {
 
-    font-family: "Raleway", 'Segoe UI Black', 'sans-serif';
+    font-family: 'Raleway','Ralewaynt',Segoe UI Black, sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
 
@@ -113,6 +113,7 @@ button {
     display: flex;
     margin-bottom: 20px;
     margin-top: 15px;
+    font-family: "Raleway",sans-serif;
 }
 
 .border_case {
@@ -317,6 +318,7 @@ button {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .graph i {
