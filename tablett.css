@@ -13,6 +13,14 @@
 }
 .accomodation, .activitie{
     color: #0065FC;
+    border-bottom: 2px solid #0065fc;
+
+}
+.accomodation:hover{
+    border-top: none;
+}
+.activitie:hover{
+    border-top: none;
 }
 .fig_size{
     padding: 0 10px 0 10px;
@@ -23,7 +31,6 @@
 .button_filtre{
     font-size: 1.15rem;
 }
-
 
 #accomodations, .section_ranked{
     margin: 0 25px 0 25px;
