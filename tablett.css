@@ -1,7 +1,19 @@
 :root {
-    font-size: 8px
+    font-size: 11px
 }
-
+.police{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "popularity"
+        "accomodation"
+        "activitie"
+        "footer";
+    grid-gap: 20px;
+}
+.accomodation, .activitie{
+    color: #0065FC;
+}
 .fig_size{
     padding: 0 10px 0 10px;
 }
@@ -11,30 +23,27 @@
 .button_filtre{
     font-size: 1.15rem;
 }
-.police{
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    grid-gap: 20px;
-}
+
+
 #accomodations, .section_ranked{
-    margin: 0;
+    margin: 0 25px 0 25px;
+}
+.header_accomodation{
+    display: flex;
+    align-items: center;
 }
 .header_grid, .margin_aside{
-    padding: 0;
+    padding: 25px;
 }
 #accomodations{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(3, 180px);
-    margin: 0;
+    grid-template-rows: 40px repeat(3, 180px);
     grid-template-areas: "header header"
                          "item_a item_b"
                            "item_c item_d"
                             "item_e item_f";
 }
-.section_ranked{
-    grid-template-rows: 70px repeat(3, 150px);
 
-}
 .margin_aside{
     grid-template-rows: auto 150px 30px 150px;
     grid-gap: 20px;
@@ -47,5 +56,9 @@
 }
 .fig_activitie{
     height: 55px;
+    display: flex;
+    align-items: center;
 }
-
+.bottom_page{
+    margin-top: unset;
+}

@@ -1,11 +1,11 @@
 @font-face {
-    font-family:"Raleway";
+    font-family: Raleway;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 }
 
 
 .police {
-    font-family: "Raleway","Segoe UI Black","sans-serif";
+    font-family: Raleway,Segoe UI Black,sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
@@ -15,26 +15,21 @@
 "footer footer";
 }
 
-a:visited {
-    color: black;
-    border-top: 2px solid white;
-    padding-top: 2px;
-}
 
 :root {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 h1 {
-    font-size: 1.70rem;
+    font-size: 1.65rem;
 }
 
 h2 {
-    font-size: 1.24rem;
+    font-size: 1.15rem;
 }
 
 p {
-    font-size: 1.20rem;
+    font-size: 1.04rem;
 }
 
 li {
@@ -49,13 +44,8 @@ button {
     font-size: 1rem;
 }
 
-.police_nt {
-    font-family: "Raleway","Segoe UI Black","sans-serif";
-}
-
 .header_grid {
     grid-area: header;
-    font-family: "Raleway","Segoe UI Black","sans-serif";
     padding: 0 40px 0 40px;
 }
 
@@ -107,7 +97,7 @@ button {
     display: flex;
     margin-bottom: 20px;
     margin-top: 15px;
-    font-family: "Raleway",sans-serif;
+    font-family: Raleway,sans-serif;
 }
 
 .border_case {
@@ -152,17 +142,18 @@ button {
 }
 
 .button_filtre {
-    padding: 0 10px
+    padding: 0 10px;
+
 }
 
 .style_button:hover {
-    box-shadow: 0 0 0 0 rgba(8, 14, 44, 0.1);
+    box-shadow: 0 0 0 0 rgb(0, 101, 252);
     animation: pulse 0.5s alternate forwards;
 }
 
 @keyframes pulse {
     to {
-        box-shadow: 0 0 0 5px rgba(8, 14, 44, 0.01);
+        box-shadow: 0 0 0 3px rgb(0, 101, 252);
     }
 }
 
@@ -234,7 +225,9 @@ button {
                          "item_d item_e item_f";
 
 }
-
+.more_info{
+    color: black;
+}
 .position_a {
     grid-area: item_a;
 }
@@ -343,17 +336,12 @@ button {
 }
 
 .line_height {
-    width: 70%;
     line-height: 1;
     margin-bottom: 5px;
 }
 
 .title_bottom {
     display: block;
-}
-
-.color_price {
-    font-family: Ralewaynt, sans-serif;
 }
 
 .star {
