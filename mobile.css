@@ -48,6 +48,7 @@
 }
 .button_filtre{
     font-size: 1.24rem;
+    font-weight: 700;
 }
 .accomodation:hover{
     border-top: none;
@@ -55,7 +56,9 @@
 .activitie:hover{
     border-top: none;
 }
-
+.activitie{
+    border-bottom: 2px solid silver;
+}
 .display_search{
     display: none;
 }
@@ -74,10 +77,12 @@
 }
 .border_style{
     width: auto;
+    font-weight: 700;
 }
 .margin_filtre {
     display: block;
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 #mobile_block {
@@ -91,19 +96,21 @@
 .section_ranked {
     grid-template-rows: auto repeat(3, 150px) auto;
     border-radius: unset;
-    padding: 25px;
+    padding: 15px;
+    margin: 0 20px 0 20px;
 }
 
 #accomodations {
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 230px)auto;
+    grid-template-rows: auto repeat(6, 200px)auto;
     grid-template-areas: "header"
 "item_a"
 "item_b"
 "item_c"
 "item_d"
 "item_e"
-"item_f";
+"item_f"
+"screen_more";
     background-color: unset;
     padding: 0 25px 0 25px;
     margin: 0;
@@ -111,7 +118,7 @@
 
 .margin_aside {
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 230px);
+    grid-template-rows: auto repeat(6, 200px);
     grid-template-areas:"header"
 "item_a"
 "item_b"

@@ -117,6 +117,7 @@ button {
     padding: 0 20px;
     width: 300px;
     font-size: 1.35rem;
+    font-weight: 700;
 }
 
 .button_search {
@@ -143,6 +144,7 @@ button {
 
 .button_filtre {
     padding: 0 10px;
+    font-weight: 700;
 
 }
 
@@ -176,6 +178,7 @@ button {
     margin-right: 20px;
     margin-bottom: 20px;
     display: inline-block;
+    font-weight: 800;
 }
 
 
@@ -222,11 +225,14 @@ button {
     justify-content: center;
     grid-template-areas: "header header header"
                          "item_a item_b item_c"
-                         "item_d item_e item_f";
+                         "item_d item_e item_f"
+                         "screen_more screen_more screen_more";
 
 }
 .more_info{
     color: black;
+    grid-area: screen_more;
+    font-weight: 700;
 }
 .position_a {
     grid-area: item_a;
