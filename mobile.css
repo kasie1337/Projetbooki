@@ -3,7 +3,6 @@
     font-size: 10px;
 }
 
-
 .police {
     grid-template-columns: 1fr;
     grid-template-areas: "header"
@@ -13,20 +12,17 @@
 "footer";
 }
 
-
 .navigation {
     display: block;
     text-align: center;
     height: auto;
 }
-
 .logo_index {
     display: flex;
     justify-content: center;
     margin-left: 15px;
     margin-bottom: 20px;
 }
-
 .accomodation, .activitie {
     display: inline-block;
     font-size: 1.40rem;
@@ -38,7 +34,6 @@
     color: #0065FC;
     border-top: none;
     margin-bottom: 20px;
-
 }
 .header_grid{
     padding: 0;
