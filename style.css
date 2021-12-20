@@ -27,9 +27,12 @@ h1 {
 h2 {
     font-size: 1.45rem;
 }
+.color_price{
+    font-size: 1.15rem;
+}
 
 p {
-    font-size: 1.15rem;
+    font-size: 1.45rem;
 }
 
 li {
