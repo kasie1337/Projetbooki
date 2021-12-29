@@ -22,6 +22,9 @@
 .activitie:hover{
     border-top: none;
 }
+.activitie:visited{
+    color: #0065fc;
+}
 .fig_size{
     padding: 5px 10px 5px 10px;
 }
