@@ -228,7 +228,6 @@ button {
     grid-gap: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    justify-content: center;
     grid-template-areas: "header header header"
                          "item_a item_b item_c"
                          "item_d item_e item_f"
@@ -239,9 +238,6 @@ button {
     color: black;
     grid-area: screen_more;
     font-weight: 700;
-}
-.position_a {
-    grid-area: item_a;
 }
 
 .position_b {
@@ -264,30 +260,36 @@ button {
     grid-area: item_f;
 }
 
-.picture_a {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
+.position_a {
+    grid-area: item_a;
 }
 
 .size_height {
     height: 100%;
     position: relative;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 5px 10px silver;
     padding: 5px;
     background-color: white;
 
 }
-
 .size_img {
     height: 100%;
 }
-
 .accomodation_picture {
     height: calc(100% - 90px);
 }
-
+.picture_a {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.fig_size {
+    height: 90px;
+    padding: 2px 10px;
+    background-color: white;
+    color: black;
+}
 
 
 .section_ranked {
@@ -332,13 +334,6 @@ button {
 
 }
 
-.fig_size {
-    height: 90px;
-    padding: 2px 10px;
-    background-color: white;
-    border-radius: 0 0 15px 15px;
-    color: black;
-}
 
 .padding_top {
     position: relative;
