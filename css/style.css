@@ -77,7 +77,6 @@ button {
 }
 .activitie {
     display: flex;
-    color: #0065FC;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
@@ -85,13 +84,9 @@ button {
     height: 80px;
     border-top: 2px solid transparent;
     font-weight:700;
-}
-.activitie:hover{
-    border-top: 2px solid #0065FC;
-}
-.activitie:visited{
     color: black;
 }
+
 .accomodation {
     display: flex;
     align-items: center;
