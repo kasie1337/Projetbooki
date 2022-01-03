@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-.header_grid, .margin_aside {
+.header_grid, .activities_aside {
     padding: 25px;
 }
 
@@ -44,7 +44,7 @@
                             "screen_more screen_more";
 }
 
-.margin_aside {
+.activities_aside {
     grid-template-rows: auto 150px 30px 150px;
     grid-gap: 20px;
 }

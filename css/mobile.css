@@ -7,9 +7,9 @@
     grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "popularity"
-"accomodation"
-"activitie"
-"footer";
+                         "accomodation"
+                         "activitie"
+                         "footer";
 }
 
 .navigation {
@@ -17,7 +17,7 @@
     text-align: center;
     height: auto;
     grid-template-areas: "logo_site logo_site"
-                          "accomodations activities";
+                         "accomodations activities";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 70px);
 }
@@ -152,7 +152,7 @@
     height: 80px;
 }
 
-.margin_aside {
+.activities_aside {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(6, 200px);
     grid-template-areas:"header"
