@@ -3,7 +3,7 @@
     font-size: 11px;
 }
 
-.police {
+.body_booki {
     grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "popularity"

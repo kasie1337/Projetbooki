@@ -4,7 +4,7 @@
 }
 
 
-.police {
+.body_booki {
     font-family: Raleway, Segoe UI Black, sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -421,7 +421,7 @@ button {
 }
 
 
-.margin_aside {
+.activities_aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 200px 50px 200px;
