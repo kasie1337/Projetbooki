@@ -43,6 +43,7 @@ body {
 /* A elements that don't have a class get default styles */
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* Make images easier to work with */

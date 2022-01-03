@@ -1,5 +1,5 @@
 
-:root{
+:root {
     font-size: 11px;
 }
 
@@ -21,6 +21,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 70px);
 }
+
 .logo_index {
     display: flex;
     justify-content: center;
@@ -43,56 +44,69 @@
     margin-bottom: 20px;
     font-weight: 500;
 }
-.activitie{
+
+.activitie {
     grid-area: activities;
     border-bottom: 3px solid silver;
     color: black;
     width: 100%;
 }
-.accomodation{
+
+.accomodation {
     grid-area: accomodations;
     width: 100%;
 }
-.header_grid{
+
+.header_grid {
     padding: 0;
 }
-.margin_form{
+
+.margin_form {
     padding: 0 20px 0 20px;
 }
-.button_filtre{
+
+.button_filtre {
     font-size: 1.24rem;
     font-weight: 700;
 }
-.accomodation:hover{
-    border-top: none;
-}
-.activitie:hover{
+
+.accomodation:hover {
     border-top: none;
 }
 
-.display_search{
+.activitie:hover {
+    border-top: none;
+}
+
+.display_search {
     display: none;
 }
-#search_fonts{
+
+#search_fonts {
     display: flex;
     justify-content: center;
 }
-.button_search{
+
+.button_search {
     border-radius: 10px 10px 10px 10px;
     margin-left: -10px;
     height: 40px;
     width: 40px;
 }
-#block_filtre{
+
+#block_filtre {
     display: block;
 }
-.fig_size{
+
+.fig_size {
     padding: 5px 10px 5px 10px;
 }
-.border_style{
+
+.border_style {
     width: calc(100% - 70px);
     font-weight: 700;
 }
+
 .margin_filtre {
     display: block;
     margin-bottom: 10px;
@@ -116,30 +130,38 @@
 
 #accomodations {
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 200px)auto;
+    grid-template-rows: auto repeat(6, 240px) auto;
     grid-template-areas: "header"
-"item_a"
-"item_b"
-"item_c"
-"item_d"
-"item_e"
-"item_f"
-"screen_more";
+        "item_a"
+        "item_b"
+        "item_c"
+        "item_d"
+        "item_e"
+        "item_f"
+        "screen_more";
     background-color: unset;
-    padding: 0 25px 0 25px;
+    padding: 0 25px;
     margin: 0;
+}
+
+.accomodation_picture {
+    height: calc(100% - 80px);
+}
+
+.fig_size {
+    height: 80px;
 }
 
 .margin_aside {
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(6, 200px);
     grid-template-areas:"header"
-"item_a"
-"item_b"
-"item_c"
-"item_d"
-"item_e"
-"item_f";
+        "item_a"
+        "item_b"
+        "item_c"
+        "item_d"
+        "item_e"
+        "item_f";
     padding: 0 25px 0 25px;
 }
 
