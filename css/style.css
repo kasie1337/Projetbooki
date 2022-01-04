@@ -10,9 +10,9 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     grid-template-areas: "header header"
-"accomodation popularity"
-"activitie activitie"
-"footer footer";
+                         "accomodation popularity"
+                         "activitie activitie"
+                         "footer footer";
 }
 
 

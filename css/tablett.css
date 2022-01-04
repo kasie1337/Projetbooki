@@ -39,9 +39,9 @@
     grid-template-rows: 40px repeat(3, 280px);
     grid-template-areas: "header header"
                          "item_a item_b"
-                           "item_c item_d"
-                            "item_e item_f"
-                            "screen_more screen_more";
+                         "item_c item_d"
+                         "item_e item_f"
+                         "screen_more screen_more";
 }
 
 .activities_aside {
